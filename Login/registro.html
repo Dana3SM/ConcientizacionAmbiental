@@ -1,46 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<LINK REL= StyleSheet HREF="css/registro.css" >
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>registro</title> 
-
-	
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Registro</title>
 </head>
-
-<header>Registrarse</header>
-
-
 <body>
-
-
-<form>
-	
-
-
-	<label for="nombre">Nombre</label>
-	<input id="nombre" type="text" name="nombre"><br><br>
-
-
-	<label for="apellido">Apellido</label>
-	<input id="apellido" type="text" name="apellido"><br><br>
-
-	<label for="correo">Correo</label>
-	<textarea id="correo" type="text" name="correo" rows="1"></textarea><br><br>
-
-	<label for="contraseña">Cambiar contraseña</label>
-	<input id="contraseña" type="text" name="contraseña"><br><br>
-
-	<label for="confirmar">Confirmar</label>
-	<input id="confirmar" type="text" name="confirmar"><br><br>
-
-
-
-	<button id="aceptar">Aceptar</button>
-	<button id="cancelar">Volver</button>
-</form>
+  <section class="form-register">
+    <h4>Formulario Registro</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </section>
 
 </body>
- 
 </html>
