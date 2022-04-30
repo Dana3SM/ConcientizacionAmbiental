@@ -1,0 +1,53 @@
+
+body{
+	background: ghostwhite;
+}
+
+aside {
+background: ghostwhite;
+font-family: serif;
+ height: fit-content;
+  widht: fit-content;
+  padding: 40px 20px;
+text-align: justify;
+  font-size: 18px;
+
+  float: left;
+}
+
+header {
+	background:  whitesmoke;
+font-family: serif ;
+ height: fit-content;
+  widht: fit-content;
+  padding: 20px 20px;
+text-align: center;
+ font-size: 28px;
+  margin: 20px ;
+ 
+}
+
+#descripcion {
+background: whitesmoke;
+font-family: serif ;
+ height: fit-content;
+  widht: 1010px;
+  padding: 20px 10px;
+text-align: justify;
+ font-size: 20px;
+
+  float: left;
+}
+
+#caja1 {
+background: yellowgreen;
+	float: left;
+
+width: 1000px;
+height: 600px;
+justify-content: center;
+text-align: center;
+}
+
+
+
