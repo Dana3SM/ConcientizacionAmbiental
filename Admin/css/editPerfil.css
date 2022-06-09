@@ -1,0 +1,71 @@
+
+body{
+	background: darkgray;
+}
+#foto{
+background:  dimgray;
+
+font-family: serif ;
+ height: 100px;
+width: 100px;
+  padding: 20px 20px;
+text-align: center;
+ font-size: 28px;
+  margin: 20px ;
+ float: center;
+}
+header{
+	background: grey;
+
+font-family: serif ;
+
+  padding: 20px 20px;
+text-align: center;
+ font-size: 32px;
+ font-style: bold;
+  margin: 20px ;
+ float: center;
+}
+form{
+	background: grey;
+
+font-family: serif ;
+
+  padding: 20px 20px;
+text-align: center;
+ font-size: 28px;
+  margin: 20px ;
+ float: center;
+}
+
+#aceptar{
+background: green;
+
+font-family: serif ;
+
+  
+text-align: center;
+ font-size: 32px;
+  margin: 20px ;
+ float: center;
+ border-radius: 7px; 
+}
+
+#cancelar{
+	background: darkred;
+
+font-family: serif ;
+
+  
+text-align: center;
+ font-size: 32px;
+  margin: 20px ;
+ float: center;
+ border-radius: 7px; 
+}
+
+input{
+	 background: whitesmoke;
+	 border-radius: 7px; 
+}
+

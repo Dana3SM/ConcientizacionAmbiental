@@ -24,8 +24,8 @@
 			<nav id="menuLateral"> 
 			
 			<br><br>
-			<img src="usuario.jpg" /><br><li><a href="Login/login.html">Iniciar Sesión (Administrador)</a></li>
-			<img src="usuario.jpg" /><br><li><a href="Login/login.html">Iniciar Sesión (Usuario)</a></li>
+			<img src="usuario.jpg" /><br><li><a href="Login/login.php">Iniciar Sesión (Administrador)</a></li>
+			<img src="usuario.jpg" /><br><li><a href="Login/login.php">Iniciar Sesión (Usuario)</a></li>
 			</nav>
 
 
