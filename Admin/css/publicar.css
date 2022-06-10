@@ -1,10 +1,19 @@
 
 body{
 	background: whitesmoke;
- 
+ align-items: center;
+ font-family: 'calibri';
 }
 
+#titulo {
+  width: 500px;
+  height: 5px;
+}
 
+#articulo {
+  width: 500px;
+  height: 500px;
+}
 header {
 	background:  dimgray;
    background-image: url("hielo.jpg");
@@ -31,55 +40,13 @@ text-align: justify;
  float: left;
 }
 
-#barra{
-  background:  dimgray;
-font-family: serif ;
- 
-  padding: 20px 20px;
-text-align: center;
- font-size: 18px;
-  margin: 20px ;
- float: left; 
+textarea{
+  align-items: center;
+  align-content: center;
 }
 
-div{
- background:  whitesmoke;
 
-font-family: serif ;
- height: fit-content;
-  padding: 20px 20px;
-text-align: justify;
- font-size: 14px;
-  margin: 20px ;
- float: left;
-}
 
-#subtitulo{
-  font-family: serif ;
- background:  whitesmoke;
-width: 700px;
- font-size: 18px;
-
- float: left;
-}
-
-#izquierda{
-  font-family: serif ;
- background:  whitesmoke;
-width: 700px;
- font-size: 14px;
-
- float: left;
-}
-
-#derecha{
-  font-family: serif ;
- background:  whitesmoke;
-width: 450px;
- text-align: center;
-
- float: left;
-}
 
 footer{
  background:  dimgray;
@@ -95,7 +62,7 @@ float: left;
 textarea{
   width: 400px;
   height: 120px;
-  font-family: serif ;
+
 
 }
 

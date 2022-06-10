@@ -14,13 +14,13 @@
 <header>
 	<div id="editPer">
 		<nav>
-				<a id ="editar" href="editPerfil.html">Editar Perfil</a>
+				<a id ="editar" href="editPerfil.php">Editar Perfil</a>
 				<br>
 				<img src="usuario.jpg">
 
 		</nav>
 	</div>
-<form id="barra">
+<form class="" id="barra">
 	
 
 	<input id="buscar" type="search" name="buscar">
@@ -62,7 +62,7 @@ Las olas de calor generalizadas y duraderas, los incendios récord y otros event
 
 <footer>
 	
-	<form id="seccionComentarios">
+	<form id="seccionComentarios" method="get" action="comentarios.php">
 	<label for="cometario">Comentarios:  </label>
 	<textarea id="comentario" name="comentario" ></textarea>
 <br>

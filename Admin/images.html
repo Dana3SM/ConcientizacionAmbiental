@@ -1,0 +1,9 @@
+<script>
+function setvalue(imgid) {
+console.log(window.opener);
+window.opener.document.getElementById("image-1").value = imgid;
+window.close();
+}
+</script>
+<img src="/images/image-1.jpg" onclick="setvalue(1)" />
+<img src="/images/image-2.jpg" onclick="setvalue(2)" />

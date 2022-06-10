@@ -11,12 +11,16 @@
 
 <header> Editar Perfil</header>
 <body>
-<form>
+<form method="get" action="editar.php">
 	<br><br><br>
 	 <input type="image" src="usuario.jpg" alt="Submit" width="48" height="48"> <br><br>
 	<label for="foto">Foto de perfil</label><br><br>
 	<button for="foto">Escoger</button><br><br>
 	<br><br>
+
+	
+	<label for="nombre">Introduzca su correo</label>
+	<input id="correo" type="text" name="correo"><br><br>
 
 	<label for="nombre">Nombre</label>
 	<input id="nombre" type="text" name="nombre"><br><br>
