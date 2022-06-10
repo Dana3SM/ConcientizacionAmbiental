@@ -15,7 +15,7 @@ if($conn->connect_error){
     die("Error: ". $conn->connect_error);
 }
 
-$sql= "SELECT COUNT(*) FROM usuarios WHERE correo='".$usuario."' and contraseña('".$passwd."')";
+$sql= "SELECT COUNT(*) FROM usuario WHERE correo='".$usuario."' and contraseña('".$passwd."')";
 
 $cursor = $conn->query($sql);
 
@@ -29,23 +29,24 @@ $cursor = $conn->query($sql);
 if($cursor == 1){
   
 
-$sql2="SELECT tipo FROM usuarios WHERE correo='".$usuario."' and contraseña('".$passwd."')";
-$datos = mysqli_query($conexion, $sql);
+$sql2="SELECT tipo FROM usuario WHERE correo='".$usuario."' and contraseña'".$passwd."'";
+$datos = $conn->query($sql2);
+
 
 
 
 
 if($tipo==1){
   
-  header("Location: https://concienciambiental.000webhostapp.com/Admin/publicar.php");
+  header("Location: Admin/publicar.php");
 }
 if($tipo==2){
  
-  header("Location: https://concienciambiental.000webhostapp.com/UsNormal/inicio.php");
+  header("Location: UsNormal/inicio.php");
 }
 
 }else{
-    header("Location: https://concienciambiental.000webhostapp.com/index.php");
+    header("Location: index.php");
 }
 
 

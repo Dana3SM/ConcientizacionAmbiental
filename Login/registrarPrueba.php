@@ -15,6 +15,14 @@ $pass=$_GET['pass'];
 $pass2=$_GET['pass2'];
 $tipo=$_GET['tipo'];
 
+
+$sql2="SELECT COUNT(*) FROM usuario WHERE correo='".$usuario."';";
+$coincidencias=$conn->query($sql2);
+if($coincidencias>=1){
+echo("ya existe este correo");
+}
+
+else{
 if($pass==$pass2){
 
 
@@ -27,7 +35,7 @@ if($conn->query($sql)===TRUE){
 }else{
    echo("Error al crear usuario:".$conn->connect_error); 
 }
-$conn->close();
+
 
 }
 else{
@@ -35,8 +43,12 @@ else{
 ?>
 <h3> Las contraseñas no coinciden</h3>
 <?php
-   
+  
+
 }
 
+}
+
+$conn->close();
 ?>
 
