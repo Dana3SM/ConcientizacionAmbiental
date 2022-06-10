@@ -8,14 +8,14 @@
   <title>inicio de sesion </title>
 </head>
 <body>
-  <section class="form-register" method="post">
+  <form class="form-register" method="get" action="iniciar.php">
     <h4>inicia sesion </h4>
     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <input class="controls" type="password" name="contraseña" id="correo" placeholder="Ingrese su Contraseña">
    
     <input class="botons" type="submit" value="entrar">
     <p><a href="registro.php">registrate</a></p>
-  </section>
+  </form>
 
 </body>
 </html>
