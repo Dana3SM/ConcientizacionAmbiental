@@ -15,41 +15,39 @@ if($conn->connect_error){
     die("Error: ". $conn->connect_error);
 }
 
-$sql= "SELECT COUNT(*) FROM usuario WHERE correo='".$usuario."' and contraseña('".$passwd."')";
+//$sql= 'SELECT COUNT(*) FROM usuario WHERE correo="'.$usuario.'" and contraseña="'.$passwd.'" ';
+//$cursor = $conn->query($sql);
 
-$cursor = $conn->query($sql);
-
-//$registros =$cursor->num_rows;
-
-
-
-
-
+$sql= 'SELECT * FROM usuario WHERE correo="'.$usuario.'" and contraseña="'.$passwd.'" ';
+$registros = $conn->query($sql);
+$cursor = $registros->num_rows;
 
 if($cursor == 1){
   
+$sql2= 'SELECT tipo FROM usuario WHERE correo="'.$usuario.'" and contraseña="'.$passwd.'" ';
 
-$sql2="SELECT tipo FROM usuario WHERE correo='".$usuario."' and contraseña'".$passwd."'";
 $datos = $conn->query($sql2);
+$dato = mysqli_fetch_array($datos, MYSQLI_NUM);
 
 
-
-
-
-if($tipo==1){
+if($dato[0]==1){
   
-  header("Location: Admin/publicar.php");
+  header('Location: https://concienciambiental.000webhostapp.com/Admin/publicar.php');
 }
-if($tipo==2){
+if($dato[0]==2){
  
-  header("Location: UsNormal/inicio.php");
+  header('Location: https://concienciambiental.000webhostapp.com/UsNormal/inicio.php');
 }
 
-}else{
-    header("Location: index.php");
 }
 
-
+else{
+    header('Location:login.php');
+    echo('el usuario no se encuentra');
+}
 
 $conn->close();
+
+
+
 ?>
